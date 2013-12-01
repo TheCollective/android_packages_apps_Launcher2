@@ -19,7 +19,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="application_name" msgid="8424725141379931883">"Spúšťač"</string>
+    <string name="application_name" msgid="8424725141379931883">"Launcher"</string>
     <string name="home" msgid="5921706419368316758">"Plocha"</string>
     <string name="uid_name" msgid="3371120195364560632">"Android Core Apps"</string>
     <string name="folder_name" msgid="8551881338202938211"></string>
@@ -30,6 +30,7 @@
     <string name="widgets_tab_label" msgid="9145860100000983599">"Miniaplikácie"</string>
     <string name="long_press_widget_to_add" msgid="7395697462851217506">"Miniaplikáciu pridáte stlačením a podržaním."</string>
     <string name="market" msgid="2652226429823445833">"Obchod"</string>
+    <string name="widget_dims_format" msgid="1386418557719032947">"%1$d × %2$d"</string>
     <string name="external_drop_widget_error" msgid="2285187188524172774">"Položku sa nepodarilo presunúť na túto plochu."</string>
     <string name="external_drop_widget_pick_title" msgid="7040647073452295370">"Zvoľte miniaplikáciu na vytvorenie"</string>
     <string name="rename_folder_label" msgid="5646236631298452787">"Názov priečinka"</string>
@@ -51,7 +52,7 @@
     <string name="title_select_shortcut" msgid="1873670208166882222">"Vyberte odkaz"</string>
     <string name="title_select_application" msgid="1793455815754848652">"Vyberte aplikáciu"</string>
     <string name="all_apps_button_label" msgid="2578400570124163469">"Aplikácie"</string>
-    <string name="all_apps_home_button_label" msgid="1022222300329398558">"Domovská stránka"</string>
+    <string name="all_apps_home_button_label" msgid="1022222300329398558">"Plocha"</string>
     <string name="delete_zone_label_workspace" msgid="7153615831493049150">"Odstrániť"</string>
     <string name="delete_zone_label_all_apps" msgid="6664588234817475108">"Odinštalovať"</string>
     <string name="delete_target_label" msgid="665300185123139530">"Odstrániť"</string>
@@ -92,7 +93,7 @@
     <string name="workspace_scroll_format" msgid="1704767047951143301">"Plocha %1$d z %2$d"</string>
     <string name="apps_customize_apps_scroll_format" msgid="5494241912377704885">"Stránka aplikácií %1$d z %2$d"</string>
     <string name="apps_customize_widgets_scroll_format" msgid="5383009742241717437">"Stránka miniaplikácií %1$d z %2$d"</string>
-    <string name="workspace_cling_title" msgid="738396473989890567">"Cíťte sa ako doma"</string>
+    <string name="workspace_cling_title" msgid="738396473989890567">"Cíťte sa tu ako doma"</string>
     <string name="workspace_cling_move_item" msgid="791013895761065070">"Tu môžete umiestniť svoje obľúbené aplikácie."</string>
     <string name="workspace_cling_open_all_apps" msgid="2459977609848572588">"Ak chcete zobraziť všetky aplikácie, dotknite sa kruhu."</string>
     <string name="all_apps_cling_title" msgid="2559734712581447107">"Vyberte niektoré aplikácie"</string>

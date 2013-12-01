@@ -199,7 +199,7 @@ public class FolderIcon extends LinearLayout implements FolderListener {
             if (mNeutralAnimator != null) {
                 mNeutralAnimator.cancel();
             }
-            mAcceptAnimator = LauncherAnimUtils.ofFloat(0f, 1f);
+            mAcceptAnimator = LauncherAnimUtils.ofFloat(mCellLayout, 0f, 1f);
             mAcceptAnimator.setDuration(CONSUMPTION_ANIMATION_DURATION);
 
             final int previewSize = sPreviewSize;
@@ -228,7 +228,7 @@ public class FolderIcon extends LinearLayout implements FolderListener {
             if (mAcceptAnimator != null) {
                 mAcceptAnimator.cancel();
             }
-            mNeutralAnimator = LauncherAnimUtils.ofFloat(0f, 1f);
+            mNeutralAnimator = LauncherAnimUtils.ofFloat(mCellLayout, 0f, 1f);
             mNeutralAnimator.setDuration(CONSUMPTION_ANIMATION_DURATION);
 
             final int previewSize = sPreviewSize;
@@ -402,9 +402,11 @@ public class FolderIcon extends LinearLayout implements FolderListener {
                     postAnimationRunnable, DragLayer.ANIMATION_END_DISAPPEAR, null);
             addItem(item);
             mHiddenItems.add(item);
+            mFolder.hideItem(item);
             postDelayed(new Runnable() {
                 public void run() {
                     mHiddenItems.remove(item);
+                    mFolder.showItem(item);
                     invalidate();
                 }
             }, DROP_IN_ANIMATION_DURATION);
@@ -535,7 +537,7 @@ public class FolderIcon extends LinearLayout implements FolderListener {
         if (mFolder == null) return;
         if (mFolder.getItemCount() == 0 && !mAnimating) return;
 
-        ArrayList<View> items = mFolder.getItemsInReadingOrder(false);
+        ArrayList<View> items = mFolder.getItemsInReadingOrder();
         Drawable d;
         TextView v;
 
@@ -573,7 +575,7 @@ public class FolderIcon extends LinearLayout implements FolderListener {
         final float transY0 = (mAvailableSpaceInPreview - d.getIntrinsicHeight()) / 2;
         mAnimParams.drawable = d;
 
-        ValueAnimator va = LauncherAnimUtils.ofFloat(0f, 1.0f);
+        ValueAnimator va = LauncherAnimUtils.ofFloat(this, 0f, 1.0f);
         va.addUpdateListener(new AnimatorUpdateListener(){
             public void onAnimationUpdate(ValueAnimator animation) {
                 float progress = (Float) animation.getAnimatedValue();

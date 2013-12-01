@@ -30,6 +30,7 @@
     <string name="widgets_tab_label" msgid="9145860100000983599">"الأدوات"</string>
     <string name="long_press_widget_to_add" msgid="7395697462851217506">"المس مع الاستمرار لاختيار إحدى الأدوات."</string>
     <string name="market" msgid="2652226429823445833">"تسوق"</string>
+    <string name="widget_dims_format" msgid="1386418557719032947">"%1$d × %2$d"</string>
     <string name="external_drop_widget_error" msgid="2285187188524172774">"تعذر إسقاط العنصر في هذه الشاشة الرئيسية."</string>
     <string name="external_drop_widget_pick_title" msgid="7040647073452295370">"اختيار أداة لإنشائها"</string>
     <string name="rename_folder_label" msgid="5646236631298452787">"اسم المجلد"</string>
@@ -66,7 +67,7 @@
     <string name="menu_manage_apps" msgid="2308685199463588895">"إدارة التطبيقات"</string>
     <string name="menu_wallpaper" msgid="5837429080911269832">"خلفية"</string>
     <string name="menu_search" msgid="4826514464423239041">"بحث"</string>
-    <string name="menu_notifications" msgid="6424587053194766192">"التنبيهات"</string>
+    <string name="menu_notifications" msgid="6424587053194766192">"الإشعارات"</string>
     <string name="menu_settings" msgid="3946232973327980394">"إعدادات النظام"</string>
     <string name="menu_help" msgid="4901160661634590633">"مساعدة"</string>
     <string name="cab_menu_delete_app" msgid="4089398025537640349">"إزالة التطبيق"</string>
